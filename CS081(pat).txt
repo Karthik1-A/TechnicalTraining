@@ -1,0 +1,18 @@
+package KarthikCS081;
+
+import java.util.Scanner;
+
+public class Pattern1 
+{
+ public static void main(String args[])
+ {
+	 Scanner sc=new Scanner(System.in);
+     System.out.println("Enter the string");
+     String str=sc.next();
+     int len=str.length();
+     for(int i=1;i<=len;i++)
+    	 System.out.printf("%-"+len+"."+i+"s"+"%"+len+"."+i+"s\n",str,str);
+     for(int i=len;i>=1;i--)
+    	 System.out.printf("%-"+len+"."+i+"s"+"%"+len+"."+i+"s\n",str,str);
+ }
+}
